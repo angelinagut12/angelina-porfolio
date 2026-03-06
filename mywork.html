@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Angelina Gutierrez
+extracurricular.html
+06/18/2023 -->
+<html lang="en">
+
+<head>
+	<title>My Work</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<center>
+<header>
+	<h1>Angelina Gutierrez</h1>
+	<figure>
+		<figcaption><h2>Future Software Developer</h2></figcaption>
+		<img src="images/portfolioadg.jpg" alt="Angelina">
+	</figure>
+</header>
+</center>
+<div class="tablet-desktop">
+	<nav class="navbar"> 
+		<a href="index.html">Home</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="about.html">About</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="resume.html">Resume</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="mywork.html">My Work</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="contact.html">Contact</a>
+	</nav>
+</div>
+<div class="mobile">
+	<nav> 
+		<a href="index.html">Home</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="about.html">About</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="resume.html">Resume</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="mywork.html">My Work</a>&nbsp;&nbsp;&#9475;&nbsp;&nbsp;
+		<a href="contact.html">Contact</a>
+	</nav>
+</div>
+<center>
+<!-- This is for the main content of the web page -->
+<main>
+	<div class="grid-container">
+		<div class="grid-item">Inspire - I strive to inspire others in the work place and set a ___ that others can follow.  </div>
+		<div class="grid-item">Create - I am still a beginner but enjoy it very much.</div>
+		<div class="grid-item">Logical - I enjoy being creative with resin and creating designs for shirts and cups using vinyl</div>
+	</div>
+	<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</main>
+</center>
+<center>
+<footer>
+	<p>
+		<a id="link" href="mailto:angelinagut12@gmail.com">angelinagut12@gmail.com</a> &nbsp; &#9475; &nbsp;
+		&copy; Copyright 2023 All Rights Reserved.
+	</p>
+</footer>
+</center>
+</body>
+</html>
