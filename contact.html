@@ -21,7 +21,7 @@ last updated 03/13/2026 -->
 <header>
 
     <div class="header-content">
-        <img src="images/portfolioadg.jpg" alt="Angelina Race portrait">
+        <img src="images/portfolioadg.JPG" alt="Angelina Race portrait">
         <h1>Angelina Race</h1>
         <p class="title">Future Software Developer</p>
     </div>
@@ -67,17 +67,17 @@ last updated 03/13/2026 -->
     <p>
 	<section id=“ContactMe”>
 		<div class="tablet-desktop">
-			<p>You can reach me by Email.</p>
-			<p>Email:<a href="mailto:angelinagut12@gmail.com">angelinagut12@gmail.com</a></p>
-			<p>LinkedIn:<a href="https://www.linkedin.com/in/angelina-race-487579226" target="_blank">Angelina Race</a></p>
-			<p>My educational institution: Wilmington University</p>
-			<p>Located: 320 N Dupont Hwy, New Castle, DE 19720</p>
+			<a href="mailto:angelinagut12@gmail.com">Email Me</a>
+			<a href="https://github.com/angelinagut12" target="_blank" rel="noopener noreferrer">GitHub</a>
+			<a href="https://www.linkedin.com/in/angelina-race-487579226" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+	
 		</div>
 	
     </p>
 	<section class="contact-section">
 		<h4>Wilmington University</h4>
-
+		<p>My educational institution: Wilmington University</p>
+		<p>Located: 320 N Dupont Hwy, New Castle, DE 19720</p>
 		<iframe
 			class="map"
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.5629218847!2d-75.58901018790772!3d39.682045499907595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c703b048560cd5%3A0xdee9dd3f4f637375!2sWilmington%20University!5e0!3m2!1sen!2sus!4v1685318509340!5m2!1sen!2sus"
@@ -86,23 +86,24 @@ last updated 03/13/2026 -->
 			referrerpolicy="no-referrer-when-downgrade">
 		</iframe>
 
-		<form class="contact-form">
-			<label for="firstName">First Name</label>
-			<input type="text" name="firstName" id="firstName" required>
+		<form class="contact-form" action="https://formspree.io/f/xqeylorl" method="POST">
 
-			<label for="lastName">Last Name</label>
-			<input type="text" name="lastName" id="lastName" required>
-
-			<label for="phoneNumber">Phone Number</label>
-			<input type="tel" name="phoneNumber" id="phoneNumber">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
 
 			<label for="email">Email</label>
-			<input type="email" name="email" id="email" required>
+			<input type="email" id="email" name="email" required>
+
+			<label for="phone">Phone (optional)</label>
+			<input type="tel" id="phone" name="phone">
 
 			<label for="message">Message</label>
-			<textarea name="message" id="message" rows="6" required></textarea>
+			<textarea id="message" name="message" rows="6" required></textarea>
 
-			<input type="submit" value="Submit">
+			<input type="hidden" name="_next" value="thankyou.html">
+
+			<button type="submit" class="button">Send Message</button>
+			
 		</form>
 	</section>
 </section>
