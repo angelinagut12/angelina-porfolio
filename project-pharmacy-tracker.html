@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pharmacy Tracker | Angelina Race</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/portfolioadg.JPG" alt="Angelina Race portrait">
+        <h1>Angelina Race</h1>
+        <p class="title">Future Software Developer</p>
+    </div>
+
+    <nav class="topnav">
+        <a href="index.html" class="logo">AR</a>
+
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="work.html" class="active">My Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="icon" onclick="toggleMenu()" aria-label="Open navigation menu">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h2>Pharmacy Tracker</h2>
+        <p>Java • CSV File Storage • Object-Oriented Programming</p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Problem</h3>
+        <p>
+            Pharmacy inventory must be tracked carefully to avoid shortages, duplicate records, and inaccurate product counts.
+            This project was created to simulate a simple inventory management system that helps organize medication records
+            and support daily inventory tracking tasks.
+        </p>
+
+        <h3>Approach</h3>
+        <p>
+            I built this project as a Java command-line application using object-oriented programming principles.
+            The program uses separate classes for the application flow, inventory service logic, product data, and file storage.
+            Product information is saved in a CSV file so data can persist between sessions.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            The application provides a menu-driven interface that allows users to:
+        </p>
+        <ul class="detail-list">
+            <li>List products currently stored in inventory</li>
+            <li>Add new products with a unique SKU</li>
+            <li>Update inventory quantities</li>
+            <li>Delete products from inventory</li>
+            <li>Generate low-stock reports</li>
+            <li>Calculate total inventory value</li>
+        </ul>
+
+        <h3>Outcome</h3>
+        <p>
+            This project strengthened my understanding of Java, file handling, menu-driven applications, and data validation.
+            It also helped me think through how a real-world pharmacy-inspired process can be translated into software logic.
+            During testing, I also identified input-formatting issues, which reinforced the importance of validating user input.
+        </p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Project Screenshots</h3>
+
+        <div class="project-gallery">
+            <figure>
+                <img src="images/pharmacy-menu.png" alt="Pharmacy tracker main menu">
+                <figcaption>Main menu for navigating inventory features.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/pharmacy-list.png" alt="Pharmacy tracker product list">
+                <figcaption>Inventory listing showing product details such as SKU, quantity, price, and minimum stock.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/pharmacy-update.png" alt="Pharmacy tracker updated inventory">
+                <figcaption>Updated inventory view after editing or removing products.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/pharmacy-delete.png" alt="Pharmacy tracker delete feature">
+                <figcaption>Delete function using SKU-based product removal.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="detail-card">
+        <h3>Links</h3>
+        <div class="project-links">
+            <a href="https://github.com/angelinagut12/pharmacyTracker" class="button" target="_blank">View Code</a>
+            <a href="work.html" class="button secondary">Back to Projects</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        <a id="link" href="mailto:angelinagut12@gmail.com">angelinagut12@gmail.com</a>
+        &nbsp; | &nbsp;
+        &copy; 2026 Angelina Race
+    </p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const links = document.getElementById("myLinks");
+    const button = document.querySelector(".icon");
+
+    links.classList.toggle("show");
+    button.classList.toggle("change");
+}
+</script>
+
+</body>
+</html>

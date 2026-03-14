@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Work | Angelina Race</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/portfolioadg.JPG" alt="Angelina Race portrait">
+        <h1>Angelina Race</h1>
+        <p class="title">Future Software Developer</p>
+    </div>
+
+    <nav class="topnav">
+        <a href="index.html" class="logo">AR</a>
+
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="work.html" class="active">My Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="icon" onclick="toggleMenu()" aria-label="Open navigation menu">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h2>My Work</h2>
+        <p>
+            A selection of projects that reflect my coursework, technical growth, and interest in building practical software.
+        </p>
+    </section>
+
+    <section class="projects-grid">
+
+        <!-- Portfolio Website -->
+        <article class="project-card">
+            <img src="images/portfolio-project.png" alt="Screenshot of portfolio website">
+
+            <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p class="project-tech">HTML • CSS • JavaScript</p>
+
+                <p>
+                    A responsive portfolio website created to showcase my resume, projects, and contact information in a clean and professional format.
+                </p>
+
+                <div class="project-links">
+                    <a href="project-portfolio.html" class="button">Project Details</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Pharmacy Inventory -->
+        <article class="project-card">
+            <img src="images/pharmacy-update.png" alt="Screenshot of pharmacy inventory project">
+
+            <div class="project-content">
+                <h3>Pharmacy Inventory Management System</h3>
+                <p class="project-tech">Java • MySQL</p>
+
+                <p>
+                    An inventory-focused application designed to manage product records, support SKU validation, and improve organization for pharmacy-related inventory tracking.
+                </p>
+
+                <div class="project-note">
+                    This project was originally submitted in 2025. I plan to enhance it with additional features and improvements.
+                </div>
+
+                <div class="project-links">
+                    <a href="project-pharmacy-tracker.html" class="button">Project Details</a>       
+                </div>
+            </div>
+        </article>
+
+        <!-- Password Manager -->
+        <article class="project-card">
+            <img src="images/password-generate.png" alt="Screenshot of password manager project">
+
+            <div class="project-content">
+                <h3>Password Manager</h3>
+                <p class="project-tech">Python</p>
+
+                <p>
+                    A Python application built to securely store and manage credentials using validation rules, structured program logic, and file-based persistence.
+                </p>
+
+                <div class="project-links">
+                    <a href="project-password-manager.html" class="button">Project Details</a>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        <a id="link" href="mailto:angelinagut12@gmail.com">angelinagut12@gmail.com</a>
+        &nbsp; | &nbsp;
+        &copy; 2026 Angelina Race
+    </p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const links = document.getElementById("myLinks");
+    const button = document.querySelector(".icon");
+
+    links.classList.toggle("show");
+    button.classList.toggle("change");
+}
+</script>
+
+</body>
+</html>

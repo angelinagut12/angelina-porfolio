@@ -1,0 +1,431 @@
+/* Angelina Race
+styles.css
+Updated for Portfolio */
+
+/* Color Palette
+#FFFFFF
+#CFC9E8
+#8F82CA
+#5645A1
+#1E1839
+*/
+
+/* ------------------ CSS RESET ------------------ */
+
+body, header, nav, main, footer, h1, h2, p, ul, li, section, img, a, figure, figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+
+/* ------------------ BODY ------------------ */
+
+body {
+	background-color: #f5f5f5;
+	color: #333;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+
+/* ------------------ HEADER ------------------ */
+
+header {
+	background-color: #f0f0f0;
+	text-align: center;
+	padding: 20px;
+}
+
+header img {
+	max-width: 120px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+
+/* ------------------ MAIN CONTENT ------------------ */
+
+main {
+	max-width: 900px;
+	width: 90%;
+	margin: 40px auto;
+	padding: 30px;
+	background-color: #f0f0f0;
+	text-align: center;
+	border-radius: 6px;
+}
+
+main section {
+	margin-bottom: 40px;
+}
+
+main p {
+	line-height: 1.6;
+	margin-top: 10px;
+}
+
+main ul,
+main ol {
+	list-style-position: inside;
+	padding-top: 10px;
+}
+
+main li {
+	margin: 8px 0;
+}
+
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+	background-color: #f0f0f0;
+}
+
+#link {
+	text-decoration: none;
+	color: #333;
+}
+
+#link:hover {
+	text-decoration: underline;
+}
+
+
+/* ------------------ HAMBURGER NAVIGATION ------------------ */
+
+.topnav {
+	position: relative;
+	background-color: #f0f0f0;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+
+.logo {
+	display: block;
+	padding: 18px 20px;
+	text-decoration: none;
+	color: #333;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/* Hidden links (mobile) */
+
+#myLinks {
+	display: none;
+}
+
+#myLinks a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 14px;
+	border-top: 1px solid #ddd;
+}
+
+#myLinks a:hover {
+	background-color: #e0e0e0;
+}
+
+#myLinks.show {
+	display: block;
+}
+
+
+/* ------------------ HAMBURGER ICON ------------------ */
+
+.icon {
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 30px;
+	height: 4px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.4s;
+	display: block;
+}
+
+/* Animation */
+
+.change .bar1 {
+	transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	transform: translate(0, -10px) rotate(45deg);
+}
+
+
+/* ------------------ DESKTOP NAVIGATION ------------------ */
+
+@media screen and (min-width: 768px) {
+
+	.topnav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 20px;
+	}
+
+	.logo {
+		position: absolute;
+		left: 20px;
+		padding: 0;
+	}
+
+	#myLinks {
+		display: flex;
+		gap: 30px;
+	}
+
+	#myLinks a {
+		border: none;
+		padding: 10px 0;
+	}
+
+	.icon {
+		display: none;
+	}
+
+}
+/* ------------------ FEEDBACK FORM ------------------ */
+
+.feedback-form {
+    max-width: 700px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 12px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    resize: vertical;
+    background-color: #fff;
+}
+
+.feedback-form input[type="submit"] {
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5645A1;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #1E1839;
+}
+
+
+/* ------------------ CONTACT PAGE ------------------ */
+.contact-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    border: 0;
+    margin: 20px auto 30px;
+    display: block;
+    border-radius: 8px;
+}
+
+
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #5645A1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #1E1839;
+}
+
+.resume-section {
+	text-align: center;
+}
+
+/* ---Resume Viewer Styles --- */
+.resume-viewer {
+    width: 100%;
+    max-width: 1000px;
+    height: 700px;        /* limits the viewer height */
+    margin: 25px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.resume-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.page-header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.page-header h2 {
+	margin-bottom: 12px;
+	font-size: 2rem;
+}
+
+.page-header p {
+	max-width: 700px;
+	margin: 0 auto;
+	line-height: 1.6;
+}
+/* Reusable Button Style */
+.button {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #5645A1;
+	color: white;
+	padding: 12px 22px;
+	margin: 10px 0 20px;
+	border-radius: 6px;
+	font-weight: 500;
+}
+
+.button:hover {
+	background-color: #1E1839;
+}
+
+/* Secondary Button Style */
+.secondary {
+    background-color: #8F82CA;
+}
+
+.secondary:hover {
+    background-color: #5645A1;
+}
+
+/* Header Image Styling */
+
+.header-content img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;   /* prevents stretching */
+    border-radius: 50%;  /* makes it perfectly round */
+}
+
+/* Project Card Styles */
+.project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.project-gallery {
+    display: grid;
+    gap: 25px;
+    justify-items: center;
+}
+
+.project-gallery figure {
+    width: 100%;
+    max-width: 650px;   /* keeps screenshots consistent */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    background-color: #111;
+    padding: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.project-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media screen and (min-width: 900px) {
+    .project-gallery {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}

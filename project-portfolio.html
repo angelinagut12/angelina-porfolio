@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Website | Angelina Race</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/portfolioadg.JPG" alt="Angelina Race portrait">
+        <h1>Angelina Race</h1>
+        <p class="title">Future Software Developer</p>
+    </div>
+
+    <nav class="topnav">
+        <a href="index.html" class="logo">AR</a>
+
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="work.html" class="active">My Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="icon" onclick="toggleMenu()" aria-label="Open navigation menu">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h2>Portfolio Website</h2>
+        <p>HTML • CSS • JavaScript • Responsive Design</p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Problem</h3>
+        <p>
+            As I continued building projects and preparing for software engineering opportunities, I needed a professional way to present my work, resume, and contact information in one place.
+            A personal portfolio website provided a way to organize that information clearly and share it with recruiters and mentors.
+        </p>
+
+        <h3>Approach</h3>
+        <p>
+            I built the website using HTML, CSS, and JavaScript with a focus on clear navigation, consistent styling, and mobile responsiveness.
+            The site was designed to include a homepage, about page, resume page, project showcase, and contact page.
+        </p>
+
+        <h3>Solution</h3>
+        <p>
+            The portfolio website includes:
+        </p>
+        <ul class="detail-list">
+            <li>Responsive navigation with a hamburger menu</li>
+            <li>Dedicated pages for About, Resume, Projects, and Contact</li>
+            <li>Project cards with screenshots and descriptions</li>
+            <li>Resume download and on-page preview</li>
+            <li>Consistent styling across pages</li>
+        </ul>
+
+        <h3>Outcome</h3>
+        <p>
+            Building this website improved my front-end development skills and helped me think more intentionally about user experience, layout, and content organization.
+            It also gave me a professional place to present my work as I continue growing my technical skills.
+        </p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Project Screenshots</h3>
+
+        <div class="project-gallery">
+            <figure>
+                <img src="images/portfolio-project.png" alt="Portfolio website homepage">
+                <figcaption>Earlier version of the portfolio website.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/portfolio-project2.png" alt="Older version of portfolio website">
+                <figcaption>Earlier version of the portfolio submitted in 2023.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="detail-card">
+        <h3>Growth Note</h3>
+        <p>
+            The version shown on this page reflects the improved design and structure I would implement 
+            today. The additional screenshots represent portions of the original 2023 
+            submission and demonstrate how my layout, organization, and visual decisions have evolved.
+        </p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Links</h3>
+        <div class="project-links">
+            <a href="work.html" class="button secondary">Back to Projects</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        <a id="link" href="mailto:angelinagut12@gmail.com">angelinagut12@gmail.com</a>
+        &nbsp; | &nbsp;
+        &copy; 2026 Angelina Race
+    </p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const links = document.getElementById("myLinks");
+    const button = document.querySelector(".icon");
+
+    links.classList.toggle("show");
+    button.classList.toggle("change");
+}
+</script>
+
+</body>
+</html>
