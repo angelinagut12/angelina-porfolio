@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>InvitePool | Angelina Race</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/portfolioadg.JPG" alt="Angelina Race portrait">
+        <h1>Angelina Race</h1>
+        <p class="title">Future Software Developer</p>
+    </div>
+
+    <nav class="topnav">
+        <a href="index.html" class="logo">AR</a>
+
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="work.html" class="active">My Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="icon" onclick="toggleMenu()" aria-label="Open navigation menu">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h2>InvitePool</h2>
+        <p>React • JavaScript • CSS • Supabase</p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Problem</h3>
+        <p>
+            Event planning can become disorganized when invitations, RSVP tracking, and guest communication are handled across multiple places.
+            I wanted to build a cleaner and more user-friendly way for hosts to create event pages, share event details, and manage guest responses all in one application.
+        </p>
+
+        <h3>Approach</h3>
+        <p>
+            I built InvitePool as a full-stack web application using React for the front end and Supabase for backend services and data storage.
+            The project focused on making event creation simple while giving hosts useful tools to manage invitations, RSVP activity, and event details.
+        </p>
+
+        <h3>Solution</h3>
+        <p>InvitePool includes:</p>
+        <ul class="detail-list">
+            <li>Custom event creation with live preview</li>
+            <li>Public and private invite pages</li>
+            <li>RSVP form with guest response tracking</li>
+            <li>Duplicate RSVP handling workflow</li>
+            <li>Host dashboard for event and RSVP management</li>
+            <li>Responsive design for a cleaner user experience</li>
+        </ul>
+
+        <h3>Outcome</h3>
+        <p>
+            This project helped me strengthen my front-end development skills, work with a backend service, and think more deeply about user experience, workflow design, and practical application building.
+        </p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Project Screenshots</h3>
+
+        <div class="project-gallery">
+            <figure>
+                <img src="images/invitepool-create.png" alt="InvitePool create event page">
+                <figcaption>Create event form with live preview.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/invitepool-invite.png" alt="InvitePool public invite page">
+                <figcaption>Public invite page showing event details.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/invitepool-RSVP.png" alt="InvitePool RSVP page">
+                <figcaption>RSVP form for guest responses.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/invitepool-dashboard.png" alt="InvitePool host dashboard">
+                <figcaption>Host dashboard with RSVP tracking and event management.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="detail-card">
+        <h3>Additional Features</h3>
+
+        <div class="project-gallery">
+            <figure>
+                <img src="images/invitepool-event-code.png" alt="InvitePool private event access code page">
+                <figcaption>Private event access with event code protection.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/invitepool-dup-RSVP.png" alt="InvitePool duplicate RSVP handling">
+                <figcaption>Duplicate RSVP workflow with options to edit an existing response.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/invitepool-login.png" alt="InvitePool host login">
+                <figcaption>Host login page for managing events.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/invitepool-host.png" alt="InvitePool host events page">
+                <figcaption>Host events page showing multiple created events.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="detail-card">
+        <h3>Links</h3>
+        <div class="project-links">
+            <a href="https://invitepool.vercel.app/" class="button">Live Site</a>
+            <a href="https://github.com/angelinagut12/invitepool" class="button">View Code</a>
+            <a href="work.html" class="button secondary">Back to Projects</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        <a id="link" href="mailto:angelinagut12@gmail.com">angelinagut12@gmail.com</a>
+        &nbsp; | &nbsp;
+        &copy; 2026 Angelina Race
+    </p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const links = document.getElementById("myLinks");
+    const button = document.querySelector(".icon");
+
+    links.classList.toggle("show");
+    button.classList.toggle("change");
+}
+</script>
+
+</body>
+</html>
