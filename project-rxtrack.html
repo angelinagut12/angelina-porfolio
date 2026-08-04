@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RxTrack | Angelina Race</title>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <img
+            src="images/portfolioadg.JPG"
+            alt="Angelina Race portrait"
+        >
+
+        <h1>Angelina Race</h1>
+
+        <p class="title">
+            Future Software Developer
+        </p>
+    </div>
+
+    <nav class="topnav">
+        <a href="index.html" class="logo">
+            AR
+        </a>
+
+        <div id="myLinks">
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="resume.html">
+                Resume
+            </a>
+
+            <a href="work.html" class="active">
+                My Work
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+        </div>
+
+        <button
+            class="icon"
+            onclick="toggleMenu()"
+            aria-label="Open navigation menu"
+        >
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h2>RxTrack</h2>
+
+        <p>
+            React • JavaScript • CSS • Supabase • PostgreSQL
+        </p>
+
+        <p class="status-badge">
+            Senior Capstone Project • In Development
+        </p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Problem</h3>
+
+        <p>
+            Pharmacy staff may need to manually monitor medications and
+            supplies that are not automatically ordered through their normal
+            inventory system. When these items are tracked through handwritten
+            notes, memory, or separate lists, it can be difficult to remember
+            upcoming order dates, identify overdue items, and maintain an
+            accurate ordering history.
+        </p>
+
+        <h3>Approach</h3>
+
+        <p>
+            I am developing RxTrack as a mobile-first pharmacy inventory and
+            ordering application. The application uses React and JavaScript
+            for the front end and Supabase with PostgreSQL for backend services
+            and database storage.
+        </p>
+
+        <p>
+            The project is based on a real pharmacy workflow and is designed
+            to help pharmacy staff organize medications and supplies that
+            require manual ordering.
+        </p>
+
+        <h3>Solution</h3>
+
+        <p>
+            RxTrack is being developed to include:
+        </p>
+
+        <ul class="detail-list">
+            <li>
+                Medication and pharmacy supply tracking
+            </li>
+
+            <li>
+                Overdue, due soon, and review statuses
+            </li>
+
+            <li>
+                Search by medication name, NDC, or UPC
+            </li>
+
+            <li>
+                Custom ordering frequencies and next due dates
+            </li>
+
+            <li>
+                Medication readiness and review tracking
+            </li>
+
+            <li>
+                Batch ordering for multiple medications or supplies
+            </li>
+
+            <li>
+                Order history and medication insights
+            </li>
+
+            <li>
+                Mobile-friendly navigation and interface design
+            </li>
+        </ul>
+
+        <h3>Development Status</h3>
+
+        <p>
+            RxTrack is currently in active development as my senior computer
+            science capstone project. The medication database, add medication
+            form, edit medication feature, medication list, search, and
+            due-date tracking are currently being built and tested.
+        </p>
+
+        <p>
+            Additional features, including batch order submission, order
+            history, reporting, and inventory insights, will be added as
+            development continues.
+        </p>
+
+        <h3>Current Outcome</h3>
+
+        <p>
+            This project has strengthened my experience with React components,
+            state management, routing, form validation, responsive interface
+            design, Supabase integration, PostgreSQL, and translating a
+            real-world pharmacy workflow into a software application.
+        </p>
+    </section>
+
+    <section class="detail-card">
+        <h3>Project Screenshots</h3>
+
+        <p>
+            The screenshots below include both early interface designs and
+            features that have already been implemented as RxTrack continues
+            development.
+        </p>
+
+        <!-- Wireframes -->
+
+        <figure class="wireframe-figure">
+            <img
+                class="wireframe-image"
+                src="images/rxtrack-wireframes.png"
+                alt="RxTrack wireframes"
+            >
+
+            <figcaption>
+                Initial mobile interface designs for the Due, Medications,
+                Orders, and Insights pages.
+            </figcaption>
+        </figure>
+
+        <!-- Real screenshots -->
+
+        <div class="project-gallery">
+
+            <figure>
+                <img
+                    class="phone-screenshot"
+                    src="images/rxtrack-dashboard.png"
+                    alt="RxTrack due dashboard"
+                >
+
+                <figcaption>
+                    Dashboard displaying overdue, due soon, and review medications.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    class="phone-screenshot"
+                    src="images/rxtrack-medications.png"
+                    alt="RxTrack medications page"
+                >
+
+                <figcaption>
+                    Medication list with search and inventory tracking.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    class="phone-screenshot"
+                    src="images/rxtrack-add-medication.png"
+                    alt="RxTrack add medication form"
+                >
+
+                <figcaption>
+                    Form for adding medications and pharmacy supplies.
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </section>
+    <section class="detail-card">
+        <h3>Current Features</h3>
+
+        <ul class="detail-list">
+            <li>
+                Mobile-first responsive layout
+            </li>
+
+            <li>
+                Bottom navigation between application pages
+            </li>
+
+            <li>
+                Medication records stored with Supabase
+            </li>
+
+            <li>
+                Add Medication form with required-field validation
+            </li>
+
+            <li>
+                Edit existing medication records
+            </li>
+
+            <li>
+                Medication search
+            </li>
+
+            <li>
+                Ready, overdue, due soon, and review status badges
+            </li>
+
+            <li>
+                Custom vendor and order frequency selections
+            </li>
+        </ul>
+    </section>
+
+    <section class="detail-card">
+        <h3>Planned Features</h3>
+
+        <ul class="detail-list">
+            <li>
+                Batch order submission
+            </li>
+
+            <li>
+                Medication and supply order history
+            </li>
+
+            <li>
+                Monthly ordering charts and trends
+            </li>
+
+            <li>
+                Email reminders for upcoming orders
+            </li>
+
+            <li>
+                Duplicate NDC and UPC prevention
+            </li>
+
+            <li>
+                Additional inventory and review controls
+            </li>
+        </ul>
+    </section>
+
+    <section class="detail-card">
+        <h3>Links</h3>
+
+        <div class="project-links">
+
+            <!--
+            Add this button after RxTrack is deployed.
+
+            <a
+                href="YOUR-RXTRACK-LIVE-SITE"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Live Site
+            </a>
+            -->
+
+            <!--
+            Replace the link below with your actual RxTrack GitHub link.
+            -->
+
+            <a
+                href="YOUR-RXTRACK-GITHUB-LINK"
+                class="button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View Code
+            </a>
+
+            <a
+                href="work.html"
+                class="button secondary"
+            >
+                Back to Projects
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        <a
+            id="link"
+            href="mailto:angelinagut12@gmail.com"
+        >
+            angelinagut12@gmail.com
+        </a>
+
+        &nbsp; | &nbsp;
+
+        &copy; 2026 Angelina Race
+    </p>
+</footer>
+
+<script>
+function toggleMenu() {
+    const links = document.getElementById("myLinks");
+    const button = document.querySelector(".icon");
+
+    links.classList.toggle("show");
+    button.classList.toggle("change");
+}
+</script>
+
+</body>
+
+</html>
